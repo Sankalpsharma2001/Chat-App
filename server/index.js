@@ -10,10 +10,10 @@ require("dotenv").config();
 const path = require('path');
 app.use(cors());
 app.use(express.json());
-app.use(express.static('build'));
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// app.use(express.static('build'));
+// app.use((req, res, next) => {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 
 mongoose.connect("mongodb://0.0.0.0:27017/chat",{useNewUrlParser:true}).then(()=>{
     console.log("DB connection succesfully");

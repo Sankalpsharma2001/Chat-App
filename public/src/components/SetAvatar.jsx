@@ -56,7 +56,7 @@ export default function SetAvatar() {
   useEffect(async () => {
     const data = [];
 // calling loop as for each dont work with api 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
       const image = await axios.get(
         `${api}/${Math.round(Math.random() * 1000)}`
       );

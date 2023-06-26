@@ -19,9 +19,10 @@ export default function Welcome() {
       <LogoutWrapper>
         <Logout />
       </LogoutWrapper>
-      {/* https://i.gifer.com/1UEW.gif */}
-      {/* <iframe src=" https://i.gifer.com/1UEW.gif" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/content-jasper-ai-5k5vZwRFZR5aZeniqb">via GIPHY</a></p> */}
+     
       <img src={Robot} alt="" />
+      <br></br>
+      <br></br>
       <h1>
         Welcome, <span>{userName}!</span>
       </h1>
@@ -38,7 +39,7 @@ const Container = styled.div`
   flex-direction: column;
   position: relative; /* Added position relative to the container */
   img {
-    height: 20rem;
+    height: 15rem;
   }
   span {
     color: #36d0eb;

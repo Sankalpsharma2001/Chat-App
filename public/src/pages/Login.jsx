@@ -74,6 +74,7 @@ export default function Login() {
             type="text"
             placeholder="Username"
             name="username"
+            autocomplete="off"
             onChange={(e) => handleChange(e)}
             min="3"
           />
@@ -81,6 +82,7 @@ export default function Login() {
             type="password"
             placeholder="Password"
             name="password"
+            autocomplete="off"
             onChange={(e) => handleChange(e)}
           />
           <button type="submit">Log In</button>

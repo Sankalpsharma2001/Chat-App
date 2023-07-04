@@ -64,7 +64,7 @@ export default function ChatContainer({ currentChat, socket }) {
   useEffect(() => {
     arrivalMessage && setMessages((prev) => [...prev, arrivalMessage]);
   }, [arrivalMessage]);
- 
+   // view the old msg by scrolling 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
